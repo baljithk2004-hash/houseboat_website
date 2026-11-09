@@ -1,9 +1,149 @@
+<?php
+// ============================================================
+// CONFIGURATION & DATA
+// ============================================================
+
+// Site configuration
+$site = [
+    'title' => 'Kettuvallam Heritage Cruises · Alleppey Backwater Luxury',
+    'name' => 'Kettuvallam Heritage',
+    'tagline' => 'Cruises · Alleppey',
+    'year' => date('Y'),
+];
+
+// Hero section
+$hero = [
+    'subtitle' => 'Slow down on the backwaters',
+    'title' => 'Experience the Timeless Magic',
+    'title_span' => "of Alleppey's Backwaters",
+    'desc' => 'Glide through calm waters, savor authentic Malabar delicacies, and unwind on traditional handcrafted houseboats equipped with modern luxury.',
+    'video' => 'houseboat.webm',
+];
+
+// Highlights
+$highlights = [
+    ['icon' => '🪵', 'title' => 'Authentic Architecture', 'desc' => 'Hand-stitched wooden hulls crafted from local Anjili wood, woven bamboo ceilings, and natural coir carpets.'],
+    ['icon' => '🌿', 'title' => 'Eco-Friendly Operations', 'desc' => 'Equipped with solar power assistance and strict zero-single-use-plastic policies to protect the backwater ecosystem.'],
+    ['icon' => '👨‍🍳', 'title' => '5-Star Onboard Dining', 'desc' => 'Private personal chefs prepare freshly caught Karimeen (Pearl Spot) fish and Kerala culinary classics daily.'],
+    ['icon' => '🗺️', 'title' => 'Tailored Itineraries', 'desc' => 'Choose between serene village canal tours, romantic sunset cruises, or overnight lake explorations.'],
+];
+
+// Fleet
+$fleet = [
+    [
+        'tag' => 'Luxury Suite',
+        'name' => 'The Royal Heritage',
+        'capacity' => '1–2 Bedrooms · Couples & Honeymooners',
+        'highlights' => ['Glass-walled air-conditioned bedroom', 'Private upper deck lounge', 'Jacuzzi bath', 'Personal chef'],
+        'price' => 'INR 14,500',
+        'unit' => 'night',
+    ],
+    [
+        'tag' => 'Family Deluxe',
+        'name' => 'Vembanad Breeze',
+        'capacity' => '3–4 Bedrooms · Families & Groups',
+        'highlights' => ['Spacious open-air dining area', 'Sun loungers', 'Board games', 'Child-safe railings'],
+        'price' => 'INR 22,000',
+        'unit' => 'night',
+    ],
+    [
+        'tag' => 'Event & Corporate',
+        'name' => 'Azure Horizon',
+        'capacity' => 'Up to 30 Guests · Day Cruise',
+        'highlights' => ['Audio system', 'Upper deck gathering area', 'Banquet dining setup', 'Conference facilities'],
+        'price' => 'INR 18,000',
+        'unit' => 'day cruise',
+    ],
+];
+
+// Timeline
+$timeline = [
+    ['time' => '12:00 PM', 'desc' => 'Check-In & Welcome Drink'],
+    ['time' => '12:30 PM', 'desc' => 'Kerala Lunch cruising to Punnamada Lake'],
+    ['time' => '02:30 PM', 'desc' => 'Narrow canal & village life cruise'],
+    ['time' => '05:30 PM', 'desc' => 'Sunset anchor at scenic location'],
+    ['time' => '08:00 PM', 'desc' => 'Freshly prepared seafood dinner'],
+    ['time' => '09:00 AM', 'desc' => 'Check-Out after breakfast'],
+];
+
+// Packages
+$packages = [
+    [
+        'name' => 'Overnight Backwater Escape',
+        'duration' => '1 Night / 2 Days',
+        'route' => 'Finishing Point Jetty → Punnamada Lake → Kainakary Village → Karumadi → Alleppey',
+        'inclusions' => ['Welcome drink', 'Lunch', 'Evening tea / snacks', 'Candlelit dinner', 'Breakfast'],
+    ],
+    [
+        'name' => 'Day Cruise Extravaganza',
+        'duration' => '11:00 AM – 5:00 PM',
+        'route' => 'Scenic round-trip through narrow village canals and open lakes.',
+        'inclusions' => ['Traditional Kerala banana leaf lunch', 'Evening snacks'],
+    ],
+];
+
+// Dining menu
+$menu = [
+    ['meal' => 'Welcome', 'items' => 'Fresh Tender Coconut Water / Spiced Buttermilk'],
+    ['meal' => 'Lunch', 'items' => 'Kerala Matta Rice, Pearl Spot Fish Fry (Karimeen), Chicken Curry, Thoran, Sambhar, Pappadam, and Payasam.'],
+    ['meal' => 'Evening', 'items' => 'Hot Tea / Coffee with Banana Fritters (Pazham Pori).'],
+    ['meal' => 'Dinner', 'items' => 'Appam with Duck Roast or Vegetable Stew, Parotta, and Fresh Fruit Platter.'],
+];
+
+// Testimonial
+$testimonial = [
+    'stars' => '★★★★★',
+    'quote' => 'An unforgettable peaceful trip! The boat was immaculate, and the food prepared by Chef Kumar was the best meal we had in Kerala. Watching the sunset over Vembanad Lake from the upper deck is a memory we will hold onto forever.',
+    'author' => 'Ananya & Rahul S., Bengaluru',
+];
+
+// FAQ
+$faqs = [
+    [
+        'q' => 'When do the houseboats operate?',
+        'a' => 'Cruising takes place between 12:00 PM and 5:30 PM. In accordance with local government regulations to protect fishermen\'s nets, houseboats anchor in a serene location from 5:30 PM until 8:00 AM the following morning.',
+    ],
+    [
+        'q' => 'Is air conditioning available all day?',
+        'a' => 'Deluxe boats provide AC in the bedrooms from 9:00 PM to 6:00 AM. Premium and Luxury suites offer full 24-hour AC throughout the boat.',
+    ],
+    [
+        'q' => 'How do I get to the boarding point?',
+        'a' => 'Our private jetty is located at Finishing Point, Alappuzha, easily accessible by taxi or auto-rickshaw from Alleppey Railway Station (4 km) or Cochin International Airport (85 km).',
+    ],
+];
+
+// Navigation links
+$nav_links = [
+    ['href' => '#hero', 'label' => 'Home'],
+    ['href' => '#fleet', 'label' => 'Our Houseboats'],
+    ['href' => '#packages', 'label' => 'Packages & Routes'],
+    ['href' => '#dining', 'label' => 'Dining'],
+    ['href' => '#about', 'label' => 'About Us'],
+    ['href' => '#contact', 'label' => 'Contact Us'],
+];
+
+// Contact info
+$contact = [
+    'address' => ['Kettuvallam Heritage Jetty', 'Finishing Point Road', 'Alappuzha, Kerala – 688013'],
+    'phones' => ['+91 98765 43210', '+91 477 225588'],
+    'email' => 'reservations@kettuvallamheritage.com',
+];
+
+// ============================================================
+// HELPER FUNCTIONS
+// ============================================================
+
+function e($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Kettuvallam Heritage Cruises · Alleppey Backwater Luxury</title>
+    <title><?php echo e($site['title']); ?></title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1037,17 +1177,14 @@
         <div class="container">
             <nav class="nav-inner">
                 <a href="#" class="logo">
-                    Kettuvallam Heritage
-                    <span>Cruises · Alleppey</span>
+                    <?php echo e($site['name']); ?>
+                    <span><?php echo e($site['tagline']); ?></span>
                 </a>
 
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#fleet">Our Houseboats</a></li>
-                    <li><a href="#packages">Packages & Routes</a></li>
-                    <li><a href="#dining">Dining</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <?php foreach ($nav_links as $link): ?>
+                        <li><a href="<?php echo e($link['href']); ?>"><?php echo e($link['label']); ?></a></li>
+                    <?php endforeach; ?>
                     <li class="nav-cta"><a href="#packages" class="btn btn-primary">Book Your Cruise</a></li>
                 </ul>
 
@@ -1065,18 +1202,17 @@
          ============================================================ -->
     <section class="hero" id="hero">
         <video id="boat-video" autoplay muted loop playsinline preload="auto" poster="">
-            <source src="houseboat.webm" type="video/webm">
+            <source src="<?php echo e($hero['video']); ?>" type="video/webm">
         </video>
 
         <div class="hero-content">
-            <div class="hero-subtitle">Slow down on the backwaters</div>
+            <div class="hero-subtitle"><?php echo e($hero['subtitle']); ?></div>
             <h1 class="hero-title">
-                Experience the Timeless Magic
-                <span>of Alleppey's Backwaters</span>
+                <?php echo e($hero['title']); ?>
+                <span><?php echo e($hero['title_span']); ?></span>
             </h1>
             <p class="hero-desc">
-                Glide through calm waters, savor authentic Malabar delicacies, and unwind on 
-                traditional handcrafted houseboats equipped with modern luxury.
+                <?php echo e($hero['desc']); ?>
             </p>
             <div class="btn-group">
                 <a href="#fleet" class="btn btn-primary">Explore Houseboats</a>
@@ -1097,26 +1233,13 @@
             </p>
 
             <div class="highlights-grid">
-                <div class="highlight-card">
-                    <span class="highlight-icon">🪵</span>
-                    <h3>Authentic Architecture</h3>
-                    <p>Hand-stitched wooden hulls crafted from local Anjili wood, woven bamboo ceilings, and natural coir carpets.</p>
-                </div>
-                <div class="highlight-card">
-                    <span class="highlight-icon">🌿</span>
-                    <h3>Eco-Friendly Operations</h3>
-                    <p>Equipped with solar power assistance and strict zero-single-use-plastic policies to protect the backwater ecosystem.</p>
-                </div>
-                <div class="highlight-card">
-                    <span class="highlight-icon">👨‍🍳</span>
-                    <h3>5-Star Onboard Dining</h3>
-                    <p>Private personal chefs prepare freshly caught Karimeen (Pearl Spot) fish and Kerala culinary classics daily.</p>
-                </div>
-                <div class="highlight-card">
-                    <span class="highlight-icon">🗺️</span>
-                    <h3>Tailored Itineraries</h3>
-                    <p>Choose between serene village canal tours, romantic sunset cruises, or overnight lake explorations.</p>
-                </div>
+                <?php foreach ($highlights as $item): ?>
+                    <div class="highlight-card">
+                        <span class="highlight-icon"><?php echo e($item['icon']); ?></span>
+                        <h3><?php echo e($item['title']); ?></h3>
+                        <p><?php echo e($item['desc']); ?></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -1133,53 +1256,21 @@
             </p>
 
             <div class="fleet-grid">
-                <!-- The Royal Heritage -->
-                <div class="fleet-card">
-                    <span class="fleet-tag">Luxury Suite</span>
-                    <h3>The Royal Heritage</h3>
-                    <div class="capacity">1–2 Bedrooms · Couples & Honeymooners</div>
-                    <ul class="fleet-highlights">
-                        <li>Glass-walled air-conditioned bedroom</li>
-                        <li>Private upper deck lounge</li>
-                        <li>Jacuzzi bath</li>
-                        <li>Personal chef</li>
-                    </ul>
-                    <div class="fleet-price">
-                        Starts from <strong>INR 14,500</strong> / night
+                <?php foreach ($fleet as $boat): ?>
+                    <div class="fleet-card">
+                        <span class="fleet-tag"><?php echo e($boat['tag']); ?></span>
+                        <h3><?php echo e($boat['name']); ?></h3>
+                        <div class="capacity"><?php echo e($boat['capacity']); ?></div>
+                        <ul class="fleet-highlights">
+                            <?php foreach ($boat['highlights'] as $highlight): ?>
+                                <li><?php echo e($highlight); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <div class="fleet-price">
+                            Starts from <strong><?php echo e($boat['price']); ?></strong> / <?php echo e($boat['unit']); ?>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Vembanad Breeze -->
-                <div class="fleet-card">
-                    <span class="fleet-tag">Family Deluxe</span>
-                    <h3>Vembanad Breeze</h3>
-                    <div class="capacity">3–4 Bedrooms · Families & Groups</div>
-                    <ul class="fleet-highlights">
-                        <li>Spacious open-air dining area</li>
-                        <li>Sun loungers</li>
-                        <li>Board games</li>
-                        <li>Child-safe railings</li>
-                    </ul>
-                    <div class="fleet-price">
-                        Starts from <strong>INR 22,000</strong> / night
-                    </div>
-                </div>
-
-                <!-- Azure Horizon -->
-                <div class="fleet-card">
-                    <span class="fleet-tag">Event & Corporate</span>
-                    <h3>Azure Horizon</h3>
-                    <div class="capacity">Up to 30 Guests · Day Cruise</div>
-                    <ul class="fleet-highlights">
-                        <li>Audio system</li>
-                        <li>Upper deck gathering area</li>
-                        <li>Banquet dining setup</li>
-                        <li>Conference facilities</li>
-                    </ul>
-                    <div class="fleet-price">
-                        Starts from <strong>INR 18,000</strong> / day cruise
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -1199,61 +1290,31 @@
             <div class="timeline">
                 <h3 class="timeline-title">Cruise Timeline</h3>
                 <div class="timeline-items">
-                    <div class="timeline-item">
-                        <div class="timeline-time">12:00 PM</div>
-                        <div class="timeline-desc">Check-In & Welcome Drink</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">12:30 PM</div>
-                        <div class="timeline-desc">Kerala Lunch cruising to Punnamada Lake</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">02:30 PM</div>
-                        <div class="timeline-desc">Narrow canal & village life cruise</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">05:30 PM</div>
-                        <div class="timeline-desc">Sunset anchor at scenic location</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">08:00 PM</div>
-                        <div class="timeline-desc">Freshly prepared seafood dinner</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-time">09:00 AM</div>
-                        <div class="timeline-desc">Check-Out after breakfast</div>
-                    </div>
+                    <?php foreach ($timeline as $item): ?>
+                        <div class="timeline-item">
+                            <div class="timeline-time"><?php echo e($item['time']); ?></div>
+                            <div class="timeline-desc"><?php echo e($item['desc']); ?></div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
             <!-- Package Cards -->
             <div class="packages-grid">
-                <div class="package-card">
-                    <h3>Overnight Backwater Escape</h3>
-                    <div class="duration">1 Night / 2 Days</div>
-                    <p class="route">
-                        <strong>Route:</strong> Finishing Point Jetty → Punnamada Lake → Kainakary Village → Karumadi → Alleppey
-                    </p>
-                    <ul class="inclusions">
-                        <li>Welcome drink</li>
-                        <li>Lunch</li>
-                        <li>Evening tea / snacks</li>
-                        <li>Candlelit dinner</li>
-                        <li>Breakfast</li>
-                    </ul>
-                </div>
-
-                <div class="package-card">
-                    <h3>Day Cruise Extravaganza</h3>
-                    <div class="duration">11:00 AM – 5:00 PM</div>
-                    <p class="route">
-                        <strong>Route:</strong> Scenic round-trip through narrow village canals and open lakes.
-                    </p>
-                    <ul class="inclusions">
-                        <li>Traditional Kerala banana leaf lunch</li>
-                        <li>Evening snacks</li>
-                    </ul>
-                </div>
+                <?php foreach ($packages as $pkg): ?>
+                    <div class="package-card">
+                        <h3><?php echo e($pkg['name']); ?></h3>
+                        <div class="duration"><?php echo e($pkg['duration']); ?></div>
+                        <p class="route">
+                            <strong>Route:</strong> <?php echo e($pkg['route']); ?>
+                        </p>
+                        <ul class="inclusions">
+                            <?php foreach ($pkg['inclusions'] as $inc): ?>
+                                <li><?php echo e($inc); ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -1272,22 +1333,12 @@
             </blockquote>
 
             <div class="menu-grid">
-                <div class="menu-card">
-                    <h4>Welcome</h4>
-                    <p>Fresh Tender Coconut Water / Spiced Buttermilk</p>
-                </div>
-                <div class="menu-card">
-                    <h4>Lunch</h4>
-                    <p>Kerala Matta Rice, Pearl Spot Fish Fry (Karimeen), Chicken Curry, Thoran, Sambhar, Pappadam, and Payasam.</p>
-                </div>
-                <div class="menu-card">
-                    <h4>Evening</h4>
-                    <p>Hot Tea / Coffee with Banana Fritters (Pazham Pori).</p>
-                </div>
-                <div class="menu-card">
-                    <h4>Dinner</h4>
-                    <p>Appam with Duck Roast or Vegetable Stew, Parotta, and Fresh Fruit Platter.</p>
-                </div>
+                <?php foreach ($menu as $item): ?>
+                    <div class="menu-card">
+                        <h4><?php echo e($item['meal']); ?></h4>
+                        <p><?php echo e($item['items']); ?></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
 
             <p class="dietary-note">
@@ -1305,13 +1356,11 @@
             <h2 class="section-title">Stories from the Backwaters</h2>
 
             <div class="testimonial">
-                <div class="stars">★★★★★</div>
+                <div class="stars"><?php echo e($testimonial['stars']); ?></div>
                 <blockquote>
-                    “An unforgettable peaceful trip! The boat was immaculate, and the food prepared by 
-                    Chef Kumar was the best meal we had in Kerala. Watching the sunset over Vembanad Lake 
-                    from the upper deck is a memory we will hold onto forever.”
+                    <?php echo e('“' . $testimonial['quote'] . '”'); ?>
                 </blockquote>
-                <cite>— Ananya & Rahul S., Bengaluru</cite>
+                <cite>— <?php echo e($testimonial['author']); ?></cite>
             </div>
         </div>
     </section>
@@ -1328,29 +1377,12 @@
             </p>
 
             <div class="faq-list">
-                <div class="faq-item">
-                    <h4>Q: When do the houseboats operate?</h4>
-                    <p>
-                        A: Cruising takes place between 12:00 PM and 5:30 PM. In accordance with local 
-                        government regulations to protect fishermen's nets, houseboats anchor in a serene 
-                        location from 5:30 PM until 8:00 AM the following morning.
-                    </p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: Is air conditioning available all day?</h4>
-                    <p>
-                        A: Deluxe boats provide AC in the bedrooms from 9:00 PM to 6:00 AM. Premium and 
-                        Luxury suites offer full 24-hour AC throughout the boat.
-                    </p>
-                </div>
-                <div class="faq-item">
-                    <h4>Q: How do I get to the boarding point?</h4>
-                    <p>
-                        A: Our private jetty is located at Finishing Point, Alappuzha, easily accessible 
-                        by taxi or auto-rickshaw from Alleppey Railway Station (4 km) or Cochin 
-                        International Airport (85 km).
-                    </p>
-                </div>
+                <?php foreach ($faqs as $faq): ?>
+                    <div class="faq-item">
+                        <h4>Q: <?php echo e($faq['q']); ?></h4>
+                        <p><?php echo e($faq['a']); ?></p>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -1362,7 +1394,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Kettuvallam Heritage</h4>
+                    <h4><?php echo e($site['name']); ?></h4>
                     <p>
                         Slow down on the backwaters.<br>
                         Experience Kerala in true luxury.
@@ -1377,29 +1409,29 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <address>
-                        Kettuvallam Heritage Jetty<br>
-                        Finishing Point Road<br>
-                        Alappuzha, Kerala – 688013<br><br>
-                        <a href="tel:+919876543210">+91 98765 43210</a><br>
-                        <a href="tel:+91477225588">+91 477 225588</a><br>
-                        <a href="mailto:reservations@kettuvallamheritage.com">reservations@kettuvallamheritage.com</a>
+                        <?php foreach ($contact['address'] as $line): ?>
+                            <?php echo e($line); ?><br>
+                        <?php endforeach; ?>
+                        <br>
+                        <?php foreach ($contact['phones'] as $phone): ?>
+                            <a href="tel:<?php echo e(preg_replace('/[^+0-9]/', '', $phone)); ?>"><?php echo e($phone); ?></a><br>
+                        <?php endforeach; ?>
+                        <a href="mailto:<?php echo e($contact['email']); ?>"><?php echo e($contact['email']); ?></a>
                     </address>
                 </div>
 
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <p>
-                        <a href="#fleet">Our Houseboats</a><br>
-                        <a href="#packages">Packages & Routes</a><br>
-                        <a href="#dining">Dining</a><br>
-                        <a href="#about">About Us</a><br>
-                        <a href="#contact">Contact Us</a>
+                        <?php foreach ($nav_links as $link): ?>
+                            <a href="<?php echo e($link['href']); ?>"><?php echo e($link['label']); ?></a><br>
+                        <?php endforeach; ?>
                     </p>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Kettuvallam Heritage Cruises · Alleppey, Kerala · All rights reserved.</p>
+                <p>© <?php echo e($site['year']); ?> <?php echo e($site['name']); ?> Cruises · Alleppey, Kerala · All rights reserved.</p>
             </div>
         </div>
     </footer>
